@@ -1,0 +1,11 @@
+{
+    "name": "Color Palette Generator",
+    "version": "1.0.0",
+    "description": "Color Palette Generator based off of the Colormind.io API",
+    "manifest_version": 3,
+    "author": "Jacob McCarthy",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Color Generator"
+    }
+}
