@@ -40,12 +40,16 @@ html {
 
 
 .btn__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100%;
     width: 20%;
 }
 
 .btn__container > button {
-    min-height: 100%;
+    width: 70%;
+    height: 60px;
 }
 
 .palette__container {
