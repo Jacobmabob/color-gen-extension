@@ -66,7 +66,6 @@ img {
   width: 15%;
 
   background: var(--darkGray-color);
-
 }
 
 .btn__container > button {
@@ -74,14 +73,19 @@ img {
   justify-content: center;
   align-items: center;
   width: 50px;
-  padding: .4em 0;
+  padding: 1em 0;
+  font-size: 12px;
 
   background: var(--lightGray-color);
+  opacity: .9;
   border: none;
   border-radius: 0.4em;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 20px 0px;
+  cursor: pointer;
+}
 
-  font-size: 12px;
+.btn__container > button:hover {
+  opacity: 1;
 }
 
 .btn__container > button > svg {
@@ -92,11 +96,27 @@ img {
   display: flex;
   width: 85%;
   height: 100%;
-
-  /* border: 1px solid var(--darkGray-color); */
 }
 
 .color__stop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   height: 100%;
+  
+
+}
+
+.color__stop:hover {
+  opacity: .8;
+}
+
+.copy__icon{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.copy__icon:hover{
+  opacity: .7;
 }
