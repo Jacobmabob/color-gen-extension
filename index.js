@@ -13,12 +13,24 @@ const generateColors = () => {
   http.onreadystatechange = function () {
     if (http.readyState == 4 && http.status == 200) {
       var palette = JSON.parse(http.responseText).result;
-      console.log(palette);
+      displayColors(palette);
     }
   };
 
   http.open("POST", url, true);
   http.send(JSON.stringify(data));
+
+  
 };
 
+const displayColors = (colors) => {
+  const colorStopArr = document.querySelectorAll(".color__stop");
+
+  for (let i=0; i < colors.length; i++) {
+    colorStopArr[i].style.background = `rgba(${colors[i]})`
+  }
+};
+
+
+generateColors();
 document.querySelector(".generate__btn").addEventListener("click", generateColors);

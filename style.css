@@ -1,67 +1,102 @@
+/* variables */
+:root {
+
+  --black-color: #030303;
+  --lightGray-color: #5c5c66;
+  --darkGray-color: #2a2a31;
+  --white-color: #e3e6eb;
+
+}
+
+
 /* reset */
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* styles */
 
-
 .app__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 550px;
-    height: 100px;
-
-    background: blue;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
 }
 
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 15%;
 
-.btn__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    width: 20%;
+  background: var(--darkGray-color);
+
 }
 
 .btn__container > button {
-    width: 70%;
-    height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: .4em 0;
+
+  background: var(--lightGray-color);
+  border: none;
+  border-radius: 0.4em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 20px 0px;
+
+  font-size: 12px;
+}
+
+.btn__container > button > svg {
+  color: var(--white-color);
 }
 
 .palette__container {
-    display: flex;
-    background: orange;
-    width: 80%;
-    height: 100%;
+  display: flex;
+  width: 85%;
+  height: 100%;
+
+  /* border: 1px solid var(--darkGray-color); */
 }
 
-.color__stop{
-    flex: 1;
-    height: 100%;
-
-    border: 1px solid black;
+.color__stop {
+  flex: 1;
+  height: 100%;
 }
