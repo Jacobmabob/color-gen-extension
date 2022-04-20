@@ -66,6 +66,8 @@ img {
   width: 15%;
 
   background: var(--darkGray-color);
+  border-top-left-radius : .4em;
+  border-bottom-left-radius : .4em;
 }
 
 .btn__container > button {
